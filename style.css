@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto+Slab:wght@100..900&display=swap");
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Roboto Slab", serif;
-    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 img {
@@ -53,12 +52,9 @@ img {
 }
 
 .nav-links li a {
-    font-family: "Poppins";
     font-size: 15px;
     color: white;
     font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0em;
     text-transform: uppercase;
     text-decoration: none;
     transition: color 0.3s;
@@ -76,15 +72,12 @@ img {
 }
 
 .login-main a {
-    font-family: "Poppins";
     font-size: 15px;
     color: white;
     font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0em;
     text-transform: uppercase;
-    transition: color 0.3s ease-in-out;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 .login-main a:hover {
@@ -99,7 +92,6 @@ img {
 }
 
 .demo-btn {
-    font-family: "Poppins";
     background-color: #ffc000;
     color: #3f3f3f;
     padding: 16px 20px !important;
@@ -114,4 +106,65 @@ img {
 
 .demo-btn:hover {
     background-color: #ffd333;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    position: relative;
+    padding-right: 10px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: -104%;
+    width: 735px;
+    background-color: #f4f7ff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px 18px;
+    z-index: 999;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(233, 234, 255);
+}
+
+.dropdown-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.dropdown-content{
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+}
+.dropdown-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+    text-transform: none;
+}
+
+.dropdown-desc {
+    font-size: 13px;
+    color: #555;
+    margin: 2px 0 0 0;
 }
